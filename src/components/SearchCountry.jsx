@@ -17,7 +17,10 @@ const SearchCountry = () => {
       />
       <button
         onClick={() =>
-          searchContext.searchDispatch({ type: "SEARCH", payload: keyword })
+          searchContext.searchDispatch({
+            type: "SEARCH",
+            payload: keyword.trim(),
+          })
         }
         className="h-10 border border-gray-700 border-l-0 rounded-r-md w-1/4 bg-gray-900 text-zinc-50 hover:bg-custom_green hover:text-black duration-200 transition-all ease-linear"
       >

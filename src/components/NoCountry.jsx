@@ -10,8 +10,8 @@ function NoArticle() {
   ) : (
     <div className="w-4/5 m-auto">
       <img
-        src="/images/world.svg"
-        alt="No Article"
+        src="../../public/images/world.svg"
+        alt="Search Country"
         className=" w-full md:w-1/2 mx-auto"
       />
       <h1 className=" text-2xl text-gray-800 text-center mx-auto md:text-4xl">
