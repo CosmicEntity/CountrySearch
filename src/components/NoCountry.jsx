@@ -10,7 +10,7 @@ function NoArticle() {
   ) : (
     <div className="w-4/5 m-auto">
       <img
-        src="../../assets/images/world.svg"
+        src="/images/world.svg"
         alt="Search Country"
         className=" w-full md:w-1/2 mx-auto"
       />
