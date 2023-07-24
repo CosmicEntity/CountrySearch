@@ -9,7 +9,7 @@ const Country = () => {
     >
       <div className="rounded-lg flex flex-col justify-evenly w-full bg-white bg-opacity-50 h-1/2 shadow-lg lg:w-1/2 lg:h-full">
         <div>
-          <p className="text-center text-md  font-bold lg:text-xl ">
+          <p className="text-center text-md font-bold lg:text-xl ">
             {countryData[0].name.official}
           </p>
           <p className="text-center text-sm lg:text-lg">
@@ -28,12 +28,12 @@ const Country = () => {
           className={`w-3/4 h-1/3 fib fi-${countryData[0].cca2.toLowerCase()} self-center`}
         />
         <div>
-          <p className="text-center p-4 text-sm lg:text-lg">
-            <span className="font-bold">Continent: </span>
+          <p className="text-center  p-4 text-sm lg:text-lg">
+            <span className="font-bold ">Continent: </span>
             {countryData[0].continents[0]}
           </p>
           <p className="text-center p-4 text-sm lg:text-lg">
-            <span className="font-bold">Region:</span>{" "}
+            <span className="font-bold ">Region:</span>{" "}
             {countryData[0].subregion}
           </p>
         </div>

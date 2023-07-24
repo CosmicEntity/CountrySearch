@@ -76,7 +76,9 @@ function App() {
           );
           color1 = flagColors.colors[0].hex;
           color2 = flagColors.colors[1].hex;
-          if (flagColors.colors[2]) color3 = flagColors.colors[2].hex;
+          flagColors.colors[2]
+            ? (color3 = flagColors.colors[2].hex)
+            : (color3 = "#fff");
         })
         .catch((err) => {
           displayDispatch({ type: "FETCH_FAILURE" });
@@ -92,13 +94,13 @@ function App() {
         searchDispatch: searchDispatch,
       }}
     >
-      <div
-        className="h-screen flex justify-center items-center"
-        style={{
-          background: `linear-gradient(to right bottom ,${color1}, ${color3}, ${color2})`,
-        }}
-      >
-        <div className="w-4/5 h-9/10 flex flex-col bg-white bg-opacity-80 mx-auto  rounded-xl  shadow-2xl">
+      <div className="h-screen flex justify-center items-center">
+        <div
+          style={{
+            background: `linear-gradient(${color1}, ${color3}, ${color2})`,
+          }}
+          className="w-4/5 h-9/10 flex flex-col bg-white bg-opacity-80 mx-auto rounded-xl shadow-2xl"
+        >
           <SearchCountry />
           {display.loading ? (
             <NoCountry />

@@ -306,7 +306,7 @@ export const FlagColors = [
     ],
   },
   {
-    name: "the Bahamas",
+    name: "Bahamas",
     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Flag_of_the_Bahamas.svg/200px-Flag_of_the_Bahamas.svg.png",
     colors: [
       {
@@ -1792,6 +1792,50 @@ export const FlagColors = [
       {
         hex: "#4382C1",
         percent: 1.63,
+      },
+    ],
+  },
+  {
+    name: "Grenada",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Grenada.svg/167px-Flag_of_Grenada.svg.png",
+    colors: [
+      {
+        hex: "#CE1126",
+        percent: 39.96,
+      },
+      {
+        hex: "#FCD116",
+        percent: 30.65,
+      },
+      {
+        hex: "#007A5E",
+        percent: 27.75,
+      },
+      {
+        hex: "#DD6221",
+        percent: 0.78,
+      },
+      {
+        hex: "#78A43C",
+        percent: 0.62,
+      },
+      {
+        hex: "#992C34",
+        percent: 0.02,
+      },
+    ],
+  },
+  {
+    name: "Greenland",
+    url: "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_Greenland.svg",
+    colors: [
+      {
+        hex: "#C8102E",
+        percent: 30,
+      },
+      {
+        hex: "#FFFFFF",
+        percent: 30,
       },
     ],
   },
