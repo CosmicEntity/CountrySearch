@@ -20,7 +20,7 @@ const SearchCountry = () => {
         onClick={() =>
           searchContext.searchDispatch({
             type: "SEARCH",
-            payload: keyword.replace(/\s\s+/g, " "),
+            payload: keyword.replace(/\s\s+/g, " ").trim(),
           })
         }
         className="h-10 border border-gray-700 border-l-0 rounded-r-md w-1/4 bg-gray-900 text-zinc-50 duration-200 transition-all ease-linear"
